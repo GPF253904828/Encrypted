@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E41008C71C71A27600BF1EAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E41008C61C71A27600BF1EAF /* main.m */; };
+		E41008CA1C71A27600BF1EAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E41008C91C71A27600BF1EAF /* AppDelegate.m */; };
+		E41008CD1C71A27600BF1EAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41008CC1C71A27600BF1EAF /* ViewController.m */; };
+		E41008D01C71A27600BF1EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41008CE1C71A27600BF1EAF /* Main.storyboard */; };
+		E41008D21C71A27600BF1EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41008D11C71A27600BF1EAF /* Assets.xcassets */; };
+		E41008D51C71A27600BF1EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41008D31C71A27600BF1EAF /* LaunchScreen.storyboard */; };
+		E41008E01C71A27600BF1EAF /* EncryptedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E41008DF1C71A27600BF1EAF /* EncryptedTests.m */; };
+		E41008EB1C71A27600BF1EAF /* EncryptedUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E41008EA1C71A27600BF1EAF /* EncryptedUITests.m */; };
+		E41008FF1C71A2ED00BF1EAF /* HashValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E41008FA1C71A2ED00BF1EAF /* HashValue.m */; };
+		E41009001C71A2ED00BF1EAF /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = E41008FC1C71A2ED00BF1EAF /* NSData+AES256.m */; };
+		E41009011C71A2ED00BF1EAF /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E41008FE1C71A2ED00BF1EAF /* NSData+Base64.m */; };
+		E41009071C71B02500BF1EAF /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E41009061C71B02500BF1EAF /* Base64.m */; };
+		E410090D1C71C4D900BF1EAF /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E410090A1C71C4D900BF1EAF /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E410090E1C71C4D900BF1EAF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E410090C1C71C4D900BF1EAF /* README.md */; };
+		E415D38D1D2F459900BF439E /* logoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E415D38C1D2F459900BF439E /* logoImage.png */; };
+		E4A4896E1D2F3544009AD4A0 /* DHEncrypted.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A4896D1D2F3544009AD4A0 /* DHEncrypted.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E41008DC1C71A27600BF1EAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E41008BA1C71A27600BF1EAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E41008C11C71A27600BF1EAF;
+			remoteInfo = Encrypted;
+		};
+		E41008E71C71A27600BF1EAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E41008BA1C71A27600BF1EAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E41008C11C71A27600BF1EAF;
+			remoteInfo = Encrypted;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E41008C21C71A27600BF1EAF /* Encrypted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encrypted.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41008C61C71A27600BF1EAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E41008C81C71A27600BF1EAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E41008C91C71A27600BF1EAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E41008CB1C71A27600BF1EAF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E41008CC1C71A27600BF1EAF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E41008CF1C71A27600BF1EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E41008D11C71A27600BF1EAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E41008D41C71A27600BF1EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E41008D61C71A27600BF1EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41008DB1C71A27600BF1EAF /* EncryptedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41008DF1C71A27600BF1EAF /* EncryptedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptedTests.m; sourceTree = "<group>"; };
+		E41008E11C71A27600BF1EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41008E61C71A27600BF1EAF /* EncryptedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41008EA1C71A27600BF1EAF /* EncryptedUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptedUITests.m; sourceTree = "<group>"; };
+		E41008EC1C71A27600BF1EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41008F91C71A2ED00BF1EAF /* HashValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashValue.h; sourceTree = "<group>"; };
+		E41008FA1C71A2ED00BF1EAF /* HashValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashValue.m; sourceTree = "<group>"; };
+		E41008FB1C71A2ED00BF1EAF /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+AES256.h"; path = "3/NSData+AES256.h"; sourceTree = "<group>"; };
+		E41008FC1C71A2ED00BF1EAF /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+AES256.m"; path = "3/NSData+AES256.m"; sourceTree = "<group>"; };
+		E41008FD1C71A2ED00BF1EAF /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		E41008FE1C71A2ED00BF1EAF /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		E41009051C71B02500BF1EAF /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		E41009061C71B02500BF1EAF /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		E41009091C71C4D900BF1EAF /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		E410090A1C71C4D900BF1EAF /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		E410090B1C71C4D900BF1EAF /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		E410090C1C71C4D900BF1EAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E415D38C1D2F459900BF439E /* logoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoImage.png; path = ../logoImage.png; sourceTree = "<group>"; };
+		E4A4896C1D2F3544009AD4A0 /* DHEncrypted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHEncrypted.h; sourceTree = "<group>"; };
+		E4A4896D1D2F3544009AD4A0 /* DHEncrypted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHEncrypted.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E41008BF1C71A27600BF1EAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41008D81C71A27600BF1EAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41008E31C71A27600BF1EAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E41008B91C71A27600BF1EAF = {
+			isa = PBXGroup;
+			children = (
+				E41008C41C71A27600BF1EAF /* Encrypted */,
+				E41008DE1C71A27600BF1EAF /* EncryptedTests */,
+				E41008E91C71A27600BF1EAF /* EncryptedUITests */,
+				E41008C31C71A27600BF1EAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E41008C31C71A27600BF1EAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E41008C21C71A27600BF1EAF /* Encrypted.app */,
+				E41008DB1C71A27600BF1EAF /* EncryptedTests.xctest */,
+				E41008E61C71A27600BF1EAF /* EncryptedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E41008C41C71A27600BF1EAF /* Encrypted */ = {
+			isa = PBXGroup;
+			children = (
+				E41008C81C71A27600BF1EAF /* AppDelegate.h */,
+				E41008C91C71A27600BF1EAF /* AppDelegate.m */,
+				E41008CB1C71A27600BF1EAF /* ViewController.h */,
+				E41008CC1C71A27600BF1EAF /* ViewController.m */,
+				E4A4896C1D2F3544009AD4A0 /* DHEncrypted.h */,
+				E4A4896D1D2F3544009AD4A0 /* DHEncrypted.m */,
+				E41008FB1C71A2ED00BF1EAF /* NSData+AES256.h */,
+				E41008FC1C71A2ED00BF1EAF /* NSData+AES256.m */,
+				E41009081C71C4D900BF1EAF /* GTMBase64-master */,
+				E41008F81C71A2ED00BF1EAF /* 3 */,
+				E41008CE1C71A27600BF1EAF /* Main.storyboard */,
+				E41008D11C71A27600BF1EAF /* Assets.xcassets */,
+				E41008D31C71A27600BF1EAF /* LaunchScreen.storyboard */,
+				E41008D61C71A27600BF1EAF /* Info.plist */,
+				E41008C51C71A27600BF1EAF /* Supporting Files */,
+			);
+			path = Encrypted;
+			sourceTree = "<group>";
+		};
+		E41008C51C71A27600BF1EAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E41008C61C71A27600BF1EAF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E41008DE1C71A27600BF1EAF /* EncryptedTests */ = {
+			isa = PBXGroup;
+			children = (
+				E41008DF1C71A27600BF1EAF /* EncryptedTests.m */,
+				E41008E11C71A27600BF1EAF /* Info.plist */,
+			);
+			path = EncryptedTests;
+			sourceTree = "<group>";
+		};
+		E41008E91C71A27600BF1EAF /* EncryptedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E41008EA1C71A27600BF1EAF /* EncryptedUITests.m */,
+				E41008EC1C71A27600BF1EAF /* Info.plist */,
+			);
+			path = EncryptedUITests;
+			sourceTree = "<group>";
+		};
+		E41008F81C71A2ED00BF1EAF /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				E41008F91C71A2ED00BF1EAF /* HashValue.h */,
+				E41008FA1C71A2ED00BF1EAF /* HashValue.m */,
+				E41008FD1C71A2ED00BF1EAF /* NSData+Base64.h */,
+				E41008FE1C71A2ED00BF1EAF /* NSData+Base64.m */,
+				E41009051C71B02500BF1EAF /* Base64.h */,
+				E41009061C71B02500BF1EAF /* Base64.m */,
+			);
+			path = 3;
+			sourceTree = "<group>";
+		};
+		E41009081C71C4D900BF1EAF /* GTMBase64-master */ = {
+			isa = PBXGroup;
+			children = (
+				E415D38C1D2F459900BF439E /* logoImage.png */,
+				E41009091C71C4D900BF1EAF /* GTMBase64.h */,
+				E410090A1C71C4D900BF1EAF /* GTMBase64.m */,
+				E410090B1C71C4D900BF1EAF /* GTMDefines.h */,
+				E410090C1C71C4D900BF1EAF /* README.md */,
+			);
+			path = "GTMBase64-master";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E41008C11C71A27600BF1EAF /* Encrypted */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41008EF1C71A27600BF1EAF /* Build configuration list for PBXNativeTarget "Encrypted" */;
+			buildPhases = (
+				E41008BE1C71A27600BF1EAF /* Sources */,
+				E41008BF1C71A27600BF1EAF /* Frameworks */,
+				E41008C01C71A27600BF1EAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Encrypted;
+			productName = Encrypted;
+			productReference = E41008C21C71A27600BF1EAF /* Encrypted.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E41008DA1C71A27600BF1EAF /* EncryptedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41008F21C71A27600BF1EAF /* Build configuration list for PBXNativeTarget "EncryptedTests" */;
+			buildPhases = (
+				E41008D71C71A27600BF1EAF /* Sources */,
+				E41008D81C71A27600BF1EAF /* Frameworks */,
+				E41008D91C71A27600BF1EAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41008DD1C71A27600BF1EAF /* PBXTargetDependency */,
+			);
+			name = EncryptedTests;
+			productName = EncryptedTests;
+			productReference = E41008DB1C71A27600BF1EAF /* EncryptedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E41008E51C71A27600BF1EAF /* EncryptedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41008F51C71A27600BF1EAF /* Build configuration list for PBXNativeTarget "EncryptedUITests" */;
+			buildPhases = (
+				E41008E21C71A27600BF1EAF /* Sources */,
+				E41008E31C71A27600BF1EAF /* Frameworks */,
+				E41008E41C71A27600BF1EAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41008E81C71A27600BF1EAF /* PBXTargetDependency */,
+			);
+			name = EncryptedUITests;
+			productName = EncryptedUITests;
+			productReference = E41008E61C71A27600BF1EAF /* EncryptedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E41008BA1C71A27600BF1EAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Damon;
+				TargetAttributes = {
+					E41008C11C71A27600BF1EAF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					E41008DA1C71A27600BF1EAF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E41008C11C71A27600BF1EAF;
+					};
+					E41008E51C71A27600BF1EAF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E41008C11C71A27600BF1EAF;
+					};
+				};
+			};
+			buildConfigurationList = E41008BD1C71A27600BF1EAF /* Build configuration list for PBXProject "Encrypted" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E41008B91C71A27600BF1EAF;
+			productRefGroup = E41008C31C71A27600BF1EAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E41008C11C71A27600BF1EAF /* Encrypted */,
+				E41008DA1C71A27600BF1EAF /* EncryptedTests */,
+				E41008E51C71A27600BF1EAF /* EncryptedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E41008C01C71A27600BF1EAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E415D38D1D2F459900BF439E /* logoImage.png in Resources */,
+				E41008D51C71A27600BF1EAF /* LaunchScreen.storyboard in Resources */,
+				E41008D21C71A27600BF1EAF /* Assets.xcassets in Resources */,
+				E41008D01C71A27600BF1EAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41008D91C71A27600BF1EAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41008E41C71A27600BF1EAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E41008BE1C71A27600BF1EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41009071C71B02500BF1EAF /* Base64.m in Sources */,
+				E41008CD1C71A27600BF1EAF /* ViewController.m in Sources */,
+				E410090E1C71C4D900BF1EAF /* README.md in Sources */,
+				E41009001C71A2ED00BF1EAF /* NSData+AES256.m in Sources */,
+				E41008CA1C71A27600BF1EAF /* AppDelegate.m in Sources */,
+				E41008C71C71A27600BF1EAF /* main.m in Sources */,
+				E41008FF1C71A2ED00BF1EAF /* HashValue.m in Sources */,
+				E410090D1C71C4D900BF1EAF /* GTMBase64.m in Sources */,
+				E4A4896E1D2F3544009AD4A0 /* DHEncrypted.m in Sources */,
+				E41009011C71A2ED00BF1EAF /* NSData+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41008D71C71A27600BF1EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41008E01C71A27600BF1EAF /* EncryptedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41008E21C71A27600BF1EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41008EB1C71A27600BF1EAF /* EncryptedUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E41008DD1C71A27600BF1EAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E41008C11C71A27600BF1EAF /* Encrypted */;
+			targetProxy = E41008DC1C71A27600BF1EAF /* PBXContainerItemProxy */;
+		};
+		E41008E81C71A27600BF1EAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E41008C11C71A27600BF1EAF /* Encrypted */;
+			targetProxy = E41008E71C71A27600BF1EAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E41008CE1C71A27600BF1EAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41008CF1C71A27600BF1EAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E41008D31C71A27600BF1EAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41008D41C71A27600BF1EAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E41008ED1C71A27600BF1EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E41008EE1C71A27600BF1EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E41008F01C71A27600BF1EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Encrypted/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.Encrypted;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E41008F11C71A27600BF1EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Encrypted/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.Encrypted;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E41008F31C71A27600BF1EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EncryptedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.EncryptedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Encrypted.app/Encrypted";
+			};
+			name = Debug;
+		};
+		E41008F41C71A27600BF1EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EncryptedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.EncryptedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Encrypted.app/Encrypted";
+			};
+			name = Release;
+		};
+		E41008F61C71A27600BF1EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EncryptedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.EncryptedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Encrypted;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E41008F71C71A27600BF1EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EncryptedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.EncryptedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Encrypted;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E41008BD1C71A27600BF1EAF /* Build configuration list for PBXProject "Encrypted" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41008ED1C71A27600BF1EAF /* Debug */,
+				E41008EE1C71A27600BF1EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E41008EF1C71A27600BF1EAF /* Build configuration list for PBXNativeTarget "Encrypted" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41008F01C71A27600BF1EAF /* Debug */,
+				E41008F11C71A27600BF1EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E41008F21C71A27600BF1EAF /* Build configuration list for PBXNativeTarget "EncryptedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41008F31C71A27600BF1EAF /* Debug */,
+				E41008F41C71A27600BF1EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E41008F51C71A27600BF1EAF /* Build configuration list for PBXNativeTarget "EncryptedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41008F61C71A27600BF1EAF /* Debug */,
+				E41008F71C71A27600BF1EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E41008BA1C71A27600BF1EAF /* Project object */;
+}
